@@ -1,0 +1,71 @@
+:root {
+  --mainWhite: #f7f9f9;
+  --mainBrown: #a76d60;
+  --darkBrown: #601700;
+}
+body {
+  background: var(--mainWhite);
+  position: relative;
+}
+.input-group-text {
+  background: var(--mainBrown);
+  color: var(--mainWhite);
+  border-color: var(--mainBrown);
+}
+.form-control {
+  border: 0.2rem solid var(--mainBrown);
+}
+.submitBtn {
+  color: var(--darkBrown);
+  background: var(--mainWhite);
+  border: 0.2rem solid var(--darkBrown);
+  transition: all 1s ease-in-out;
+}
+.submitBtn:hover {
+  background: var(--darkBrown);
+  color: var(--mainWhite);
+}
+.fail {
+  border-color: red;
+}
+.complete {
+  border-color: green;
+}
+.feedback {
+  display: none;
+}
+.loading {
+  display: none;
+}
+:disabled {
+  opacity: 0.2 !important;
+}
+.showItem {
+  display: block;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  padding: 0.4rem 1.2rem;
+  border-radius: 5%;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: rgba(100, 97, 97, 0.356);
+}
+
+.col-md-6 {
+  position: relative;
+}
+
+.fa-solid {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: green;
+}
